@@ -34,6 +34,6 @@ public class BootStrapData implements ApplicationListener<ContextRefreshedEvent>
 		customerRepository.save(c3);
 		
 		
-		System.out.println("Customer(s) saved ...... ");
+		System.out.println("Customer(s) saved ...... " + customerRepository.count());
 	}
 }
